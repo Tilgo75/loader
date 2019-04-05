@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Loader</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+	<style>
+		html, body, ul, fieldset {margin: 0; padding: 0;}
+		html {font-size: 62.5%; box-sizing: border-box;}
+		body {font-size: 1.4rem; line-height: 1.2;}
+		*, *:before, *:after {box-sizing: inherit;}
+		a {text-decoration: none;}
+		a:hover {text-decoration: underline;}
+		ul {list-style: none;}
+		img {max-width: 100%; height: auto;}
+		input, [tabindex] {outline: 0;}
+		fieldset, button {border: 0; outline: 0;}
+		button {font-family: inherit;}
+		table {border-collapse: collapse; border-spacing: 0;}
+
+		/* Mobile */
+		@media (max-width: 767px) {
+			html {font-size: 50%;}
+		}
+		
+		html {margin: 3rem;}
+		.dn {display: none;}
+		.center {text-align: center;}
+		
+		.icon {width: 3.5rem; height: 3.5rem; margin: 0 1rem;}
+		.icon use {fill: #9b9b9b;}
+		
+		/* custom */
+		.loader_sc {width: 100%; height: 100%; position: fixed; z-index: 65; top: 0; left: 0; background-color: rgba(0,0,0,.7);}
+		.lds-roller {display: inline-block;width: 64px;height: 64px;position: absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+		.lds-roller div {animation: lds-roller 1.2s cubic-bezier(.5, 0, .5, 1) infinite; transform-origin: 32px 32px;}
+		.lds-roller div:after {content: " ";display: block;position: absolute;width: 6px;height: 6px;border-radius: 50%;background: #fff;margin: -3px 0 0 -3px;}
+		.lds-roller div:nth-child(1) {animation-delay: -.036s;}
+		.lds-roller div:nth-child(1):after {top: 50px;left: 50px;}
+		.lds-roller div:nth-child(2) {animation-delay: -.072s;}
+		.lds-roller div:nth-child(2):after {top: 54px;left: 45px;}
+		.lds-roller div:nth-child(3) {animation-delay: -.108s;}
+		.lds-roller div:nth-child(3):after {top: 57px;left: 39px;}
+		.lds-roller div:nth-child(4) {animation-delay: -.144s;}
+		.lds-roller div:nth-child(4):after {top: 58px; left: 32px;}
+		.lds-roller div:nth-child(5) {animation-delay: -.18s;}
+		.lds-roller div:nth-child(5):after {top: 57px;left: 25px;}
+		.lds-roller div:nth-child(6) {animation-delay: -.216s;}
+		.lds-roller div:nth-child(6):after {top: 54px;left: 19px;}
+		.lds-roller div:nth-child(7) {animation-delay: -.252s;}
+		.lds-roller div:nth-child(7):after {top: 50px;left: 14px;}
+		.lds-roller div:nth-child(8) {animation-delay: -.288s;}
+		.lds-roller div:nth-child(8):after {top: 45px;left: 10px;}
+		@keyframes lds-roller {
+		  0% {transform: rotate(0deg);}
+		  100% {transform: rotate(360deg);}
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="loader_sc">
+		<div class="lds-roller">
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.
+		<br><br><br><br><br><br><br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.
+		<br><br><br><br><br><br><br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.
+		<br><br><br><br><br><br><br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.
+		<br><br><br><br><br><br><br><br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.
+	</p>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<script>
+		$('html').on('click', '.myClass', function(e) {
+			
+		});
+	</script>
+
+</body>
+</html>
